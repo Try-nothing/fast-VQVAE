@@ -71,10 +71,12 @@ pip install torch torchvision numpy matplotlib scipy umap-learn
 2. 训练模型：
 # 设置训练参数
 model = Model(...).to(device)
+
 optimizer = optim.Adam(...)
 
 # 训练循环
 for i in range(num_steps):
+
     # ...训练步骤...
 
 
@@ -89,6 +91,7 @@ show(make_grid(originals.cpu()))
 4. 隐空间分析：
 # UMAP降维可视化
 proj = UMAP(...).fit_transform(embedding_weights)
+
 plt.scatter(proj[:,0], proj[:,1], alpha=0.3)
 
 
