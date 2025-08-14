@@ -82,17 +82,15 @@ for i in range(num_steps):
 
 3. 重建可视化：
 # 生成重建图像
-show(make_grid(reconstructions.cpu()))
+![生成重建图像](https://github.com/Try-nothing/fast-VQVAE/blob/main/figure/model_reconstruction.png)
 
 # 显示原始图像
-show(make_grid(originals.cpu()))
+![显示原始图像](https://github.com/Try-nothing/fast-VQVAE/blob/main/figure/original_images.png)
 
 
 4. 隐空间分析：
 # UMAP降维可视化
-proj = UMAP(...).fit_transform(embedding_weights)
-
-plt.scatter(proj[:,0], proj[:,1], alpha=0.3)
+![UMAP降维可视化](https://github.com/Try-nothing/fast-VQVAE/blob/main/figure/embedding_visualize.png)
 
 
 📈 预期结果
